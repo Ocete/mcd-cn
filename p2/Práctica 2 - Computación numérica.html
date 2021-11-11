@@ -14193,7 +14193,7 @@ E[X] &amp; = \int_{-\infty}^{+\infty} x f_X dx \\
     { \int_{-\infty}^{\infty}  \pi(x | \theta) \; \pi(\theta) \; d\theta}  =
     \frac{ \int_{0}^{1}  \; \theta^{k+1} (1-\theta)^{n-k}  \; \; B(\theta| \alpha=5, \beta=10) \; d\theta }
     { \int_{0}^{1}   \theta^{k} (1-\theta)^{n-k} \; B(\theta| \alpha=5, \beta=10) \; d\theta} 
-\end{align*}<p>Para obtener este valor podemos o bien resolver analíticamente estas integrales, o bien estimarlas utilizando métodos de MonteCarlo. Puede probarse (TODO) que en este caso la expresión de $\pi(\theta | x)$ es cerrada (esto es, las distribuciones son conjugadas a priori). $\pi(\theta | x)$ viene dada por una distribución beta de parámetros $B(\alpha + k, \beta + n - k)$. Por lo tanto, la respuesta a la segunda pregunta es la esperanza de esta distribución beta:</p>
+\end{align*}<p>Para obtener este valor podemos o bien resolver analíticamente estas integrales, o bien estimarlas utilizando métodos de MonteCarlo. Puede probarse que en este caso la expresión de $\pi(\theta | x)$ es cerrada (esto es, las distribuciones son conjugadas a priori). $\pi(\theta | x)$ viene dada por una distribución beta de parámetros $B(\alpha + k, \beta + n - k)$. Por lo tanto, la respuesta a la segunda pregunta es la esperanza de esta distribución beta:</p>
 \begin{equation*}
     \mu_{\text{posterior}} = E[\theta]_{\text{posterior}} = \int_{-\infty}^{\infty} \theta  \; B(\theta | \alpha + k, \beta + n - k) \;  d\theta =  \frac{\alpha + k}{\alpha + k + \beta + n - k} = \frac{\alpha + k}{\alpha + \beta + n}
 \end{equation*}
